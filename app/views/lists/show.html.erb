@@ -1,0 +1,10 @@
+<% @list.movies.each do |movie| %>
+<div class="card-product">
+  <img src=<%= movie.poster_url %>/>
+  <div class="card-product-infos">
+    <h2><%= movie.title %></h2>
+    <p><%= movie.overview %></p>
+     <p><%= movie.rating %></p>
+  </div>
+</div>
+<% end %>

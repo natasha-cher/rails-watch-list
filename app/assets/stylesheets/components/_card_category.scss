@@ -1,0 +1,19 @@
+.card-category {
+
+  a:link { color: white; text-decoration: none; }
+  a:visited { color: white; text-decoration: none; }
+  a:hover { color: #670BFF; text-decoration: none; }
+  a:active { color: #670BFF; text-decoration: none; }
+
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
