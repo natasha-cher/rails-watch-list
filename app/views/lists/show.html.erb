@@ -15,7 +15,9 @@
      <% end %>
      <% @list.bookmarks.each do |bookmark| %>
      <p>"<%= bookmark.comment %>"</p>
-     <%= link_to "Delete", list_bookmark_path(@list, bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+     <%= link_to list_bookmark_path(@list, bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
+      Remove from list <i class="fa-regular fa-trash-can"></i></i>
+     <% end %>
      <% end %>
   </div>
 </div>
